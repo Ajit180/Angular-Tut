@@ -13,4 +13,12 @@ export class App {
   protected title = 'Ajit Yadav';
   x=56;
   y=100;
+  handleclick(){
+    console.log("Button is Clicked");
+    this.otherFunction(); // why this => because this denotes to this whole class
+  }
+
+  otherFunction(){
+    console.log("Other Function is Called");
+  }
 }
