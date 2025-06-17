@@ -9,4 +9,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected title = 'Ajit Yadav';
+  x=56;
+  y=100;
 }
