@@ -13,12 +13,28 @@ export class App {
   protected title = 'Ajit Yadav';
   x=56;
   y=100;
-  handleclick(){
-    console.log("Button is Clicked");
-    this.otherFunction(); // why this => because this denotes to this whole class
+  name:string="Ajit Yadav"
+  data:string|number="Mohan";
+  other:any=3434;
+
+  updateName(){
+    this.name="Rohan"
+    // this.name = 3434; //this will give an error 
+    this.data=45;
+    this.other=true;
+    this.other=343645;
+    this.other={};
+    console.log(this.name);
+    console.log(this.other);
+    console.log(this.data);
   }
 
-  otherFunction(){
-    console.log("Other Function is Called");
+  updateVar(){
+    let x:number = 30;
+    console.log(x);
+  }
+
+  sum(a:number,b:number){
+    console.log(a+b);
   }
 }
