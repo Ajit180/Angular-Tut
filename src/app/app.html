@@ -1,11 +1,9 @@
-<h1>interpoilistion in Angular</h1>
- <h1>{{title}}</h1>  
- <!-- double {{}} is called interpoilistion -->
-  <h1>{{x+y}}</h1>
-
-  <app-login></app-login>
-  <app-profile></app-profile>
-
-  <button (click)="updateName()">Click</button>
- <br> <br> <br>
-  <button (click)="sum(3,4)">Sum</button>
+<div class="box">
+    <h1>Counter App</h1>
+     <h2 class="header">{{count}}</h2>
+     <div>
+         <button class="btn bg-green" (click)="handlecounter('plus')">Increment</button>
+         <button class="btn bg-black" (click)="handlecounter('reset')">Reset</button>
+         <button class="btn bg-red" (click)="handlecounter('minus')">Decrement</button>
+     </div>
+</div>

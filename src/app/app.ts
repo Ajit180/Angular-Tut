@@ -10,31 +10,30 @@ import { ProfileComponent } from './profile/profile';
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'Ajit Yadav';
-  x=56;
-  y=100;
-  name:string="Ajit Yadav"
-  data:string|number="Mohan";
-  other:any=3434;
+    
+   count:number=0;
+   
+    //  increment(){
+    //    this.count++;
+    //  }
 
-  updateName(){
-    this.name="Rohan"
-    // this.name = 3434; //this will give an error 
-    this.data=45;
-    this.other=true;
-    this.other=343645;
-    this.other={};
-    console.log(this.name);
-    console.log(this.other);
-    console.log(this.data);
-  }
+    //  decrement(){
+    //   this.count--;
+    //  }
 
-  updateVar(){
-    let x:number = 30;
-    console.log(x);
-  }
+    //  reset(){
+    //   this.count=0;
+    //  }
 
-  sum(a:number,b:number){
-    console.log(a+b);
-  }
+     handlecounter(val:string){
+       if(val=='plus'){
+        this.count=this.count+1
+       }
+       else if(val=='minus'){
+        this.count=this.count-1;
+       }
+       else{
+        this.count=0;
+       }
+     }
 }
