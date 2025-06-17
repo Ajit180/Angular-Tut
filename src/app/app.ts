@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Login } from './login/login';
+import { ProfileComponent } from './profile/profile';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Login],
+  imports: [RouterOutlet,Login,ProfileComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
