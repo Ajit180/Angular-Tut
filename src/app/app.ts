@@ -11,29 +11,29 @@ import { ProfileComponent } from './profile/profile';
 })
 export class App {
     
-   count:number=0;
-   
-    //  increment(){
-    //    this.count++;
-    //  }
+  //  count:number=0
+  //    handlecounter(val:string){
+  //      if(val=='plus'){
+  //       this.count=this.count+1
+  //      }
+  //      else if(val=='minus'){
+  //       this.count=this.count-1;
+  //      }
+  //      else{
+  //       this.count=0;
+  //      }
+  //    }
 
-    //  decrement(){
-    //   this.count--;
-    //  }
+  handleEvent(event:any){
+    console.log("Function called type",event.type);
+    console.log("Function called target",event.target.name);
+    console.log("function called event",(event.target as Element).className)
+  }
 
-    //  reset(){
-    //   this.count=0;
-    //  }
 
-     handlecounter(val:string){
-       if(val=='plus'){
-        this.count=this.count+1
-       }
-       else if(val=='minus'){
-        this.count=this.count-1;
-       }
-       else{
-        this.count=0;
-       }
-     }
+  handleEventM(event:MouseEvent){
+    console.log("Function called ",event.type);
 }
+
+}
+

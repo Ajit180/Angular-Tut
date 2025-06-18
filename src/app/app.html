@@ -1,4 +1,4 @@
-<div class="box">
+<!-- <div class="box">
     <h1>Counter App</h1>
      <h2 class="header">{{count}}</h2>
      <div>
@@ -6,4 +6,18 @@
          <button class="btn bg-black" (click)="handlecounter('reset')">Reset</button>
          <button class="btn bg-red" (click)="handlecounter('minus')">Decrement</button>
      </div>
-</div>
+</div> -->
+
+
+<h1>Event Handler</h1>
+<button class="btn" name="btn-name" (click)="handleEvent($event)">Click Event</button>
+
+<br>
+<br>
+
+<div class="btn1" name="btn-mouseenter" (mouseenter)="handleEventM($event)" style="width: 50px; height: 50px; background-color: green;">Mouse</div>
+
+<br>
+<br>
+
+<div class="btn2" name="btn-mouseleave" (mouseleave)="handleEventM($event)" style="width: 50px; height: 50px; background-color: red;">Mouse</div>
